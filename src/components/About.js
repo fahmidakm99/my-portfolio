@@ -52,7 +52,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col px-4 sm:px-6 lg:px-8 pt-24 text-white max-w-7xl mx-auto"
+      className="flex flex-col px-4 pt-24 text-white max-w-6xl sm:px-6 lg:px-8 mx-auto"
     >
       <div className="space-y-3 mb-10 text-left sm:text-left">
         <p className="text-pink-400 text-sm uppercase tracking-widest">

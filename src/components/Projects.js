@@ -69,9 +69,13 @@ const Projects = () => {
 
   return (
     <section
-      className="min-h-screen px-6 pt-24 text-white max-w-6xl mx-auto w-full"
+      className="min-h-screen px-4 pt-24 text-white max-w-6xl sm:px-6 lg:px-8  mx-auto w-full"
       id="projects"
     >
+       <p className="text-pink-400 text-sm uppercase tracking-widest space-y-3 mb-4">
+        Project Explorations
+      </p>
+      <h2 className="text-4xl space-y-3 mb-10 font-extrabold">Projects</h2>
    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
   {projectData.map((project, i) => (
     <div

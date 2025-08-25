@@ -10,20 +10,6 @@ const experiences = [
     company: "Cognizant Pvt India",
     period: "2021 – 2023",
     description: `
-● Developed a B2B web application for the Oil & Gas industry focused on sales management, tailored for a Norway-based client.  <br> 
-● Designed and maintained enterprise-grade internal tools using Cordova.  <br> 
-● Built a web app for managing tool rentals/returns across yards, enhancing inventory visibility and user efficiency.  <br> 
-● Delivered a cross-platform (Android/iOS) inventory app using Ionic and Cordova for real-time tool tracking and improved field productivity.  <br> 
-● Created responsive, user-friendly UIs using AngularJS, Ionic, Bootstrap, jQuery, and CSS.  <br> 
-● Contributed to scalable, maintainable solutions aligned with real-world operational workflows.<br> 
-    `,
-    logo: Ebay,
-  },
-  {
-    role: "Frontend Developer",
-    company: "Cognizant Pvt India",
-    period: "2023 – 2025",
-    description: `
 ● Developed a scalable B2C e-commerce platform for a US-based client, enhancing UX and supporting secure transactions for 10,000+ users. <br> 
 ● Collaborated with cross-functional teams to build scalable features using Java, Spring Boot, and GraphQL.  <br> 
 ● Built REST APIs and GraphQL queries with a Microservices architecture to enable flexible, efficient data flow.  <br> 
@@ -34,6 +20,21 @@ const experiences = [
 ● Deployed ML-based alerting to auto-detect system errors, reducing incident response time by 20%.  <br> 
 ● Led site-wide upgrades for Raptor and Raptor IO applications, optimizing system performance.  <br> 
 ● Practiced Agile methodologies to ensure rapid, iterative development and continuous improvement.<br> 
+    `,
+    logo: Ebay,
+  },
+  {
+    role: "Frontend Developer",
+    company: "Cognizant Pvt India",
+    period: "2023 – 2025",
+    description: `
+● Developed a B2B web application for the Oil & Gas industry focused on sales management, tailored for a Norway-based client.  <br> 
+● Designed and maintained enterprise-grade internal tools using Cordova.  <br> 
+● Built a web app for managing tool rentals/returns across yards, enhancing inventory visibility and user efficiency.  <br> 
+● Delivered a cross-platform (Android/iOS) inventory app using Ionic and Cordova for real-time tool tracking and improved field productivity.  <br> 
+● Created responsive, user-friendly UIs using AngularJS, Ionic, Bootstrap, jQuery, and CSS.  <br> 
+● Contributed to scalable, maintainable solutions aligned with real-world operational workflows.<br> 
+
     `,
     logo: Aker,
   },
@@ -106,7 +107,7 @@ const ExperienceCard = ({ exp, index }) => {
 const Experience = () => {
   return (
     <section
-      className="flex flex-col px-6 pt-24 text-white max-w-6xl mx-auto"
+      className="flex flex-col px-4 pt-24 text-white max-w-6xl sm:px-6 lg:px-8 mx-auto"
       id="experience"
     >
       <p className="text-pink-400 text-sm uppercase tracking-widest space-y-3 mb-4">

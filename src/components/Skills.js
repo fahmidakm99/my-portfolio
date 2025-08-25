@@ -173,7 +173,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="px-4 sm:px-6 pt-24 text-white max-w-7xl mx-auto w-full"
+      className="px-4  pt-24 text-white  max-w-6xl sm:px-6 lg:px-8 mx-auto w-full"
     >
       <div className="space-y-3 mb-8 sm:mb-10">
         <p className="text-pink-400 text-sm uppercase tracking-widest">Expertise</p>
