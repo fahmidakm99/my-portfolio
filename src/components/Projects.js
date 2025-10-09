@@ -15,7 +15,7 @@ const projectData = [
       "Real-time updates and state management",
       "Designed using Figma",
     ],
-    linkText: "View Demo",
+    linkText: "View Code",
     link: "https://github.com/fahmidakm99/RecipeAppDemo",
   },
   

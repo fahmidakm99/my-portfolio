@@ -5,22 +5,22 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Navbar from "./components/Navbar";
-import vdo from './assets/vdo.mp4';
-import bg5 from './assets/bg5.jpg';
+import vdo from "./assets/vdo.mp4";
+import bg5 from "./assets/bg5.jpg";
 
 function App() {
   return (
-    <><div className="font-sans text-gray-500 bg-[#0b0917]">
-      <Navbar />
+    <>
+      <div className="font-sans text-gray-500 bg-[#0b0917]">
+        <Navbar />
       </div>
-     <div
+      <div
         className="font-sans text-gray-500 bg-cover bg-center bg-no-repeat"
-       style={{ backgroundImage: `url(${bg5})` }}
-
+        style={{ backgroundImage: `url(${bg5})` }}
       >
-      <Hero />
+        <Hero />
       </div>
-    <div className="font-sans text-gray-800 min-h-screen flex flex-col items-center justify-center [background-color:#0b0917]  text-white px-6">
+       <div className="font-sans text-gray-800 min-h-screen flex flex-col items-center justify-center [background-color:#0b0917]  text-white px-6">
       {/* bg-gradient-to-br from-[#0f0c29] to-[#302b63] */}
         <About />
          <Experience />
@@ -28,7 +28,7 @@ function App() {
        
         <Projects />
         </div>
-         {/* <div className="bg-[#0b0917] px-6">
+      {/* <div className="bg-[#0b0917] px-6">
         <Contact />
       </div> */}
       {/* Contact section with video background */}
@@ -46,9 +46,7 @@ function App() {
           <Contact />
         </div>
       </div>
-
-      </>
-     
+    </>
   );
 }
 

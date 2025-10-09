@@ -78,13 +78,17 @@ const Contact = () => {
             <div className="flex items-center space-x-4">
               <Phone className="text-indigo-600" />
               <a href="tel:+96894047147" className="text-white hover:underline">
-                +968 9404 7147
+                {/* +968 9404 7147 */}
+                +971 507315421
               </a>
             </div>
 
             <div className="flex items-center space-x-4">
               <MapPin className="text-indigo-600" />
-              <span className="text-white">Muscat, Oman</span>
+              <span className="text-white">
+                {/* Muscat, Oman */}
+                Dubai, UAE
+                </span>
             </div>
 
             <div className="flex items-center justify-start space-x-6 pt-4 border-t border-gray-700">
@@ -109,26 +113,26 @@ const Contact = () => {
               >
                 <Instagram className="text-indigo-600 hover:scale-110 transition" />
               </a>
-              <a
-                href="https://wa.me/96894047147"
+              {/* <a
+                href="https://wa.me/971507315421"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <MessageSquare className="text-indigo-600 hover:scale-110 transition" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
       </div>
 
       {/* RoboViewer */}
-      <div
+      {/* <div
         ref={roboRef}
         className={`w-full md:w-1/2 flex justify-center items-center transform transition-all duration-700 ease-out
           ${roboVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}`}
       >
         <RoboViewer />
-      </div>
+      </div> */}
     </section>
   );
 };

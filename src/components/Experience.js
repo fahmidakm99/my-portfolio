@@ -6,40 +6,52 @@ import Ebay from "./ebay.png";
 
 const experiences = [
   {
-    role: "Java Full Stack Developer",
+    role: "Programmer Analyst",
     company: "Cognizant Pvt India",
     period: "2021 – 2023",
     description: `
-● Developed a scalable B2C e-commerce platform for a US-based client, enhancing UX and supporting secure transactions for 10,000+ users. <br> 
-● Collaborated with cross-functional teams to build scalable features using Java, Spring Boot, and GraphQL.  <br> 
-● Built REST APIs and GraphQL queries with a Microservices architecture to enable flexible, efficient data flow.  <br> 
-● Refactored core modules into Microservices, improving modularity and scalability.  <br> 
-● Integrated online payment systems and secured them using OAuth 2.0, Spring Security, and JWT.  <br> 
+● Developed a B2C e-commerce platform serving 10,000+ active users, enabling secure and seamless 
+transactions.  <br> 
+● Built dynamic Angular frontend modules (v12+), creating responsive and interactive user interfaces for 10,000+ 
+active users.  <br> 
+● Integrated REST and GraphQL APIs using Angular HttpClient and RxJS Observables for efficient data 
+handling.  <br> 
+● Developed backend services in Java (Spring Boot, Microservices) to support frontend features, improving data 
+retrieval speed by 35%.  <br> 
+● Implemented secure API integrations with OAuth 2.0/JWT and Spring Security.  <br> 
+● Applied unit testing with Jest for frontend and JUnit for backend services, achieving high code coverage.  <br> 
+● Optimized application performance with lazy loading, reusable components, and modular design.  <br> 
 ● Implemented Prometheus alerts for real-time monitoring and faster issue detection.  <br> 
-● Wrote JUnit test cases and applied Sonar fixes to maintain high code quality.  <br> 
 ● Deployed ML-based alerting to auto-detect system errors, reducing incident response time by 20%.  <br> 
-● Led site-wide upgrades for Raptor and Raptor IO applications, optimizing system performance.  <br> 
-● Practiced Agile methodologies to ensure rapid, iterative development and continuous improvement.<br> 
+● Led site-wide upgrades for Raptor and Raptor IO applications, reducing downtime by 20%.  <br> 
     `,
     logo: Ebay,
   },
   {
-    role: "Frontend Developer",
+    role: "Frontend Developer(Associate)",
     company: "Cognizant Pvt India",
     period: "2023 – 2025",
     description: `
-● Developed a B2B web application for the Oil & Gas industry focused on sales management, tailored for a Norway-based client.  <br> 
-● Designed and maintained enterprise-grade internal tools using Cordova.  <br> 
-● Built a web app for managing tool rentals/returns across yards, enhancing inventory visibility and user efficiency.  <br> 
-● Delivered a cross-platform (Android/iOS) inventory app using Ionic and Cordova for real-time tool tracking and improved field productivity.  <br> 
-● Created responsive, user-friendly UIs using AngularJS, Ionic, Bootstrap, jQuery, and CSS.  <br> 
-● Contributed to scalable, maintainable solutions aligned with real-world operational workflows.<br> 
+● Designed and delivered a B2B web application for sales management and tool tracking, streamlining operations 
+in  the Oil & Gas sector. <br>
+● Deployed WeShop, a web app to manage tool rentals/returns, improving inventory visibility and reducing 
+tracking errors by 40%. <br>
+● Delivered Mips 2.0, a cross-platform (Android/iOS) inventory tracking app using Ionic and Cordova, boosting 
+on-field productivity by 25%. <br>
+● Designed and maintained enterprise-grade internal tools with Cordova, saving teams an estimated 10+ 
+hours/week in reporting effort. <br>
+● Created responsive UIs with Angular, Ionic, Bootstrap, jQuery, and CSS, leading to a 20% increase in 
+adoption among end users. <br>
+● Applied Agile methodologies (Scrum) for iterative delivery, bug tracking, and continuous improvement. <br>
+● Collaborated with cross-functional teams (UI/UX, QA, Product Owners) to deliver user-friendly interfaces 
+aligned with business requirements. <br>
+● Implemented state management, lazy loading, and reusable components to improve application performance 
+and maintainability. <br>
 
     `,
     logo: Aker,
   },
 ];
-
 
 const ExperienceCard = ({ exp, index }) => {
   const controls = useAnimation();
@@ -92,7 +104,9 @@ const ExperienceCard = ({ exp, index }) => {
           <p className="text-gray-500 italic mb-3">{exp.period}</p>
           <p
             className="text-white"
-            dangerouslySetInnerHTML={{ __html: formatDescription(exp.description) }}
+            dangerouslySetInnerHTML={{
+              __html: formatDescription(exp.description),
+            }}
           />
         </div>
       </div>
@@ -103,11 +117,10 @@ const ExperienceCard = ({ exp, index }) => {
   );
 };
 
-
 const Experience = () => {
   return (
-    <section
-      className="flex flex-col px-4 pt-24 text-white max-w-6xl sm:px-6 lg:px-8 mx-auto"
+  <section
+      className="px-4  pt-24 text-white  max-w-6xl sm:px-6 lg:px-8 mx-auto w-full"
       id="experience"
     >
       <p className="text-pink-400 text-sm uppercase tracking-widest space-y-3 mb-4">
@@ -115,21 +128,20 @@ const Experience = () => {
       </p>
       <h2 className="text-4xl space-y-3 mb-10 font-extrabold">Experience</h2>
 
+
       <div className="relative">
-  {/* Pink vertical line: left on mobile, centered on desktop */}
-  <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-pink-500"></div>
+        {/* Pink vertical line: left on mobile, centered on desktop */}
+        <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-pink-500"></div>
 
-  <div className="flex flex-col gap-24">
-    {experiences.map((exp, index) => (
-      <ExperienceCard exp={exp} key={index} index={index} />
-    ))}
-  </div>
-</div>
+        <div className="flex flex-col gap-24">
+          {experiences.map((exp, index) => (
+            <ExperienceCard exp={exp} key={index} index={index} />
+          ))}
+        </div>
+      </div>
 
-
-       {/* 3D Model at bottom */}
+      {/* 3D Model at bottom */}
       {/* <LogoGrid /> */}
-
     </section>
   );
 };
