@@ -28,13 +28,14 @@ const Hero = () => {
           >
             Contact Me
           </a>
-          <a
-            href="/assets/Fahmida K M-SoftwareEngineer-CV.pdf" // replace with the actual path to your PDF
-            download="FahmidaKM_CV.pdf" // optional: the name it will save as
-            className="inline-block bg-white text-indigo-700 font-semibold py-2 px-6 rounded-full shadow hover:shadow-lg transition md:ml-4"
-          >
-            Download CV
-          </a>
+      <a
+  href={`${process.env.PUBLIC_URL}/assets/FahmidaKM-SoftwareEngineer-CV.pdf`}
+  download="FahmidaKM_CV.pdf"
+  className="inline-block bg-white text-indigo-700 font-semibold py-2 px-6 rounded-full shadow hover:shadow-lg transition md:ml-4"
+>
+  Download CV
+</a>
+
         </div>
 
         {/* IMAGE COLUMN */}
