@@ -3,53 +3,60 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import Aker from "./aker.png";
 import Ebay from "./ebay.png";
+import CodeFolks from "./images.jpg";
 
 const experiences = [
-  {
-    role: "Programmer Analyst",
-    company: "Cognizant Pvt India",
-    period: "2021 – 2023",
+   {
+    role: "Software Developer",
+    company: "CodeFolks Technologies",
+    period: "April 2025 – December 2025",
     description: `
-● Developed a B2C e-commerce platform serving 10,000+ active users, enabling secure and seamless 
-transactions.  <br> 
-● Built dynamic Angular frontend modules (v12+), creating responsive and interactive user interfaces for 10,000+ 
-active users.  <br> 
-● Integrated REST and GraphQL APIs using Angular HttpClient and RxJS Observables for efficient data 
-handling.  <br> 
-● Developed backend services in Java (Spring Boot, Microservices) to support frontend features, improving data 
-retrieval speed by 35%.  <br> 
-● Implemented secure API integrations with OAuth 2.0/JWT and Spring Security.  <br> 
-● Applied unit testing with Jest for frontend and JUnit for backend services, achieving high code coverage.  <br> 
-● Optimized application performance with lazy loading, reusable components, and modular design.  <br> 
-● Implemented Prometheus alerts for real-time monitoring and faster issue detection.  <br> 
-● Deployed ML-based alerting to auto-detect system errors, reducing incident response time by 20%.  <br> 
-● Led site-wide upgrades for Raptor and Raptor IO applications, reducing downtime by 20%.  <br> 
+● Built and supported web applications using Angular, Java, Spring Boot, and RESTful APIs. <br>
+● Enhanced UI components, achieving a 30% reduction in page load time and a 20% improvement in user task completion across core workflows. <br>
+● Connected backend services with frontend modules and managed API integration and consumption. <br>
+● Facilitated bi-weekly meetings with product managers, designers, and QA engineers to align on product specifications, leading to a 15% decrease in product defects and faster release cycles. <br>
+● Resolved bugs, optimized existing modules, and contributed to code reviews to maintain high code quality and stability. <br>
+● Followed Agile/Scrum methodologies, actively contributing to sprint planning, execution, and timely feature delivery.<br>
+ <br>
+
     `,
-    logo: Ebay,
+    logo: CodeFolks,
   },
   {
     role: "Frontend Developer(Associate)",
     company: "Cognizant Pvt India",
     period: "2023 – 2025",
     description: `
-● Designed and delivered a B2B web application for sales management and tool tracking, streamlining operations 
-in  the Oil & Gas sector. <br>
-● Deployed WeShop, a web app to manage tool rentals/returns, improving inventory visibility and reducing 
-tracking errors by 40%. <br>
-● Delivered Mips 2.0, a cross-platform (Android/iOS) inventory tracking app using Ionic and Cordova, boosting 
-on-field productivity by 25%. <br>
-● Designed and maintained enterprise-grade internal tools with Cordova, saving teams an estimated 10+ 
-hours/week in reporting effort. <br>
-● Created responsive UIs with Angular, Ionic, Bootstrap, jQuery, and CSS, leading to a 20% increase in 
-adoption among end users. <br>
-● Applied Agile methodologies (Scrum) for iterative delivery, bug tracking, and continuous improvement. <br>
-● Collaborated with cross-functional teams (UI/UX, QA, Product Owners) to deliver user-friendly interfaces 
-aligned with business requirements. <br>
-● Implemented state management, lazy loading, and reusable components to improve application performance 
-and maintainability. <br>
+● Engineered a B2B web application for sales management and tool tracking, streamlining operations in  the Oil & Gas sector.<br>
+● Deployed WeShop, a web app to manage tool rentals/returns, improving inventory visibility and reducing tracking errors by 40% by real-time visibility and controlled check-in/check-out processes.<br>
+● Released Mips 2.0, a cross-platform (Android/iOS) inventory tracking app using Ionic and Cordova, boosting on-field productivity by ~25% by cutting task completion time via streamlined UI flows, offline sync, and faster data updates.<br>
+● Designed and maintained enterprise-grade internal tools with Cordova, saving teams an estimated 10+ hours/week in reporting effort.
+● Created responsive UIs with Angular, Ionic, Bootstrap, jQuery, and CSS, leading to a 20% increase in adoption among end users.<br>
+● Utilized Agile Scrum practices for iterative delivery, defect resolution, and continuous enhancement.<br>
+● Collaborated with cross-functional teams (UI/UX, QA, Product Owners) to deliver user-friendly interfaces aligned with business requirements.<br>
+● Applied state management, lazy loading, and reusable components to boost performance and maintainability.<br>
+ <br>
 
     `,
     logo: Aker,
+  },
+  {
+    role: "Programmer Analyst",
+    company: "Cognizant Pvt India",
+    period: "2021 – 2023",
+    description: `
+● Delivered a B2C e-commerce platform serving 10,000+ active users, ensuring secure and seamless online transactions.  <br> 
+● Built scalable frontend modules using Angular (v12+), delivering responsive and interactive user interfaces.  <br> 
+● Integrated REST and GraphQL APIs with Angular HttpClient and RxJS Observables for efficient state and data handling.  <br> 
+● Developed backend services using Java, Spring Boot, Microservices, Spring Data JPA, improving data retrieval speed by 35%.  <br> 
+● Implemented OAuth 2.0 / JWT authentication and enforced secure API communication using Spring Security. <br>
+● Performed unit testing using Jest (frontend) and JUnit (backend), maintaining high code coverage and stability.<br>
+● Improved application performance through lazy loading, modular architecture, and reusable UI components.<br>
+● Led application upgrades for Raptor and Raptor IO, reducing system downtime by 20% and improving reliability through phased releases, dependency upgrades, bug fixes, and robust exception handling.<br>
+● Participated in code reviews, requirement analysis, and sprint ceremonies as part of the Agile development process.<br>
+
+    `,
+    logo: Ebay,
   },
 ];
 

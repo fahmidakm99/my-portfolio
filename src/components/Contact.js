@@ -134,7 +134,7 @@ const Contact = () => {
               <Phone className="text-indigo-600" />
               <a href="tel:+96894047147" className="text-white hover:underline">
                 {/* +968 9404 7147 */}
-                +971 507315421
+                +971 525359092
               </a>
             </div>
 
