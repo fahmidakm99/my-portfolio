@@ -1,7 +1,24 @@
 import React, { useState } from "react";
 import CoverImg from '../assets/cover-recipe.jpg';
+import UAEHomeImg from '../assets/Uaehome.png';
 
 const projectData = [
+    {
+    title: "UAE Home",
+    image: UAEHomeImg,
+    tech: ["Angular", "Ionic"],
+    description:
+      "UAE Homes is a modern web application designed to simplify real estate browsing and property management in the United Arab Emirates.",
+    features: [
+      "Multi-language support (English & Arabic) with RTL layout.",
+      "Browse and filter properties with detailed info.",
+      "Save favorites and list your own properties.",
+      "Light and dark theme support for all devices",
+      "Designed using Figma",
+    ],
+    linkText: "View Code",
+    link: "https://github.com/fahmidakm99/UAE-Homes",
+  },
   {
     title: "Recipe App",
     image: CoverImg,

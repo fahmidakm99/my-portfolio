@@ -28,14 +28,13 @@ const Hero = () => {
           >
             Contact Me
           </a>
-      <a
-  href={`${process.env.PUBLIC_URL}/assets/Fahmida K M-FSE-Resume.pdf`}
-  download="FahmidaKM_CV.pdf"
-  className="inline-block bg-white text-indigo-700 font-semibold py-2 px-6 rounded-full shadow hover:shadow-lg transition md:ml-4"
->
-  Download CV
-</a>
-
+          <a
+            href={`${process.env.PUBLIC_URL}/assets/Fahmida K M-FSE-Resume.pdf`}
+            download="FahmidaKM_CV.pdf"
+            className="inline-block bg-white text-indigo-700 font-semibold py-2 px-6 rounded-full shadow hover:shadow-lg transition md:ml-4"
+          >
+            Download CV
+          </a>
         </div>
 
         {/* IMAGE COLUMN */}
