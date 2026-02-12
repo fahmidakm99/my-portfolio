@@ -3,24 +3,25 @@ import CoverImg from "../assets/cover-recipe.jpg";
 import UAEHomeImg from "../assets/Uaehome.png";
 
 const projectData = [
-  {
-    title: "UAE Home",
-    image: UAEHomeImg,
-    tech: ["Angular", "Ionic"],
-    description:
-      "UAE Homes is a modern web application designed to simplify real estate browsing and property management in the United Arab Emirates.",
-    features: [
-      "Multi-language support (English & Arabic) with RTL layout.",
-      "Browse and filter properties with detailed info.",
-      "Save favorites and list your own properties.",
-      "Light and dark theme support for all devices",
-      "Designed using Figma",
-    ],
-    linkText: "View Code",
-    link: "https://github.com/fahmidakm99/UAE-Homes",
-    liveDemoText: "Live Demo",
-    liveDemoLink: "https://uae-homes.vercel.app/home", // Add your Vercel URL here
-  },
+{
+  title: "UAE Homes",
+  image: UAEHomeImg,
+  tech: ["Angular", "Ionic"],
+  description:
+    "UAE Homes is a modern web application designed to simplify real estate browsing and property management in the United Arab Emirates.",
+  features: [
+    "Multi-language support (English & Arabic) with RTL layout.",
+    "Browse and filter properties with detailed info.",
+    "Save favorites and list your own properties.",
+    "Light and dark theme support for all devices",
+    "Designed using Figma",
+  ],
+  linkText: "View Code",
+  link: "https://github.com/fahmidakm99/UAE-Homes",
+  liveDemoText: "Live Demo",
+  liveDemoLink: "https://uae-homes.vercel.app" // Add your Vercel URL here
+},
+
   {
     title: "Recipe App",
     image: CoverImg,
@@ -148,6 +149,14 @@ const Projects = () => {
                   rel="noopener noreferrer"
                 >
                   {project.linkText}
+                </a>
+                <a
+                  href={project.liveDemoLink}
+                  className="text-sm text-gray-300 font-medium hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {project.liveDemoText}
                 </a>
               </div>
 
