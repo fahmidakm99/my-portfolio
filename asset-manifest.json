@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.a6f34e6f.css",
-    "main.js": "/my-portfolio/static/js/main.c8da6a4b.js",
+    "main.css": "/my-portfolio/static/css/main.d7a505ae.css",
+    "main.js": "/my-portfolio/static/js/main.eeb4c765.js",
     "static/js/453.438d9e50.chunk.js": "/my-portfolio/static/js/453.438d9e50.chunk.js",
     "static/media/vdo.mp4": "/my-portfolio/static/media/vdo.2ca4354bcffe94ba634a.mp4",
     "static/media/cover-recipe.jpg": "/my-portfolio/static/media/cover-recipe.b93bc8d5d7cd4155d513.jpg",
+    "static/media/Uaehome.png": "/my-portfolio/static/media/Uaehome.9b53f1d4d332df6696c0.png",
     "static/media/profile.jpg": "/my-portfolio/static/media/profile.6fbe41c50457c99d839b.jpg",
     "static/media/bg5.jpg": "/my-portfolio/static/media/bg5.fdf2b7bf29f803ca1fdb.jpg",
     "static/media/ebay.png": "/my-portfolio/static/media/ebay.83aa9e44dd87de577604.png",
     "static/media/aker.png": "/my-portfolio/static/media/aker.faed72e2c4fbe9983115.png",
     "index.html": "/my-portfolio/index.html",
-    "main.a6f34e6f.css.map": "/my-portfolio/static/css/main.a6f34e6f.css.map",
-    "main.c8da6a4b.js.map": "/my-portfolio/static/js/main.c8da6a4b.js.map",
+    "main.d7a505ae.css.map": "/my-portfolio/static/css/main.d7a505ae.css.map",
+    "main.eeb4c765.js.map": "/my-portfolio/static/js/main.eeb4c765.js.map",
     "453.438d9e50.chunk.js.map": "/my-portfolio/static/js/453.438d9e50.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6f34e6f.css",
-    "static/js/main.c8da6a4b.js"
+    "static/css/main.d7a505ae.css",
+    "static/js/main.eeb4c765.js"
   ]
 }
