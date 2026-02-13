@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CoverImg from "../assets/cover-recipe.jpg";
 import UAEHomeImg from "../assets/Uaehome.png";
+import EverUs from "../assets/figma our.jpg"
 
 const projectData = [
 {
@@ -38,6 +39,23 @@ const projectData = [
     linkText: "View Code",
     link: "https://github.com/fahmidakm99/RecipeAppDemo",
   },
+  {
+  title: "EverUs",
+  image: EverUs,
+  tech: ["React", "Tailwind css", "Node js", "TypeScript"],
+  description:
+    "A responsive customised app to showcase the memories and the moments for valentine",
+  features: [
+    "Relationship AI.",
+    "Picture Gallery with moments.",
+    "customised counter",
+    "Designed using Figma",
+  ],
+  linkText: "View Code",
+  link: "https://github.com/fahmidakm99/couple-website",
+  liveDemoText: "Live Demo",
+  liveDemoLink: "https://couple-website-kaoc.vercel.app" // Add your Vercel URL here
+},
 ];
 
 const getBadgeColor = (index) => {
