@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CoverImg from "../assets/cover-recipe.jpg";
 import UAEHomeImg from "../assets/Uaehome.png";
 import EverUs from "../assets/figma our.jpg"
+import JobPortal from "../assets/JobPortal.png"
 
 const projectData = [
 {
@@ -56,6 +57,27 @@ const projectData = [
   liveDemoText: "Live Demo",
   liveDemoLink: "https://couple-website-kaoc.vercel.app" // Add your Vercel URL here
 },
+
+{
+  title: "Job Recruit Portal",
+  image: JobPortal,
+  tech: ["MongoDB", "React", "NodeJs", "Express"],
+  description:
+    "Job Recruit Portal is a small web app developed in Mern stack.",
+  features: [
+    "A Dashboard to track entire application.",
+    "Recruiter can update applicant status.",
+    "Filter applicants by status.",
+    "AI-based or keyword-based matching algorithm.",
+    "Search jobs by title, location, skills.",
+    "Deployed project using Render, Vercel and MongoDB Atlas secure connection.",
+  ],
+  linkText: "View Code",
+  link: "https://github.com/fahmidakm99/Job-Portal-Frontend",
+  liveDemoText: "Live Demo",
+  liveDemoLink: "https://job-portal-frontend-five-gamma.vercel.app/" // Add your Vercel URL here
+},
+
 ];
 
 const getBadgeColor = (index) => {
