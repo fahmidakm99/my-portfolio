@@ -25,7 +25,7 @@ const projectData = [
     liveDemoLink: "https://uae-homes.vercel.app", // Add your Vercel URL here
   },
   {
-    title: "UAE Homes",
+    title: "Netflix Clone",
     image: NetflixCloneImg,
     tech: ["React", "Javascript", "Css"],
     description:
