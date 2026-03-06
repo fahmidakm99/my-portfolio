@@ -293,7 +293,7 @@ const Contact = () => {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 6rem;
+  font-size: 2.5rem;
   transform-origin: -180px 0; /* desktop orbit radius */
   animation: orbit 10s linear infinite;
 }
