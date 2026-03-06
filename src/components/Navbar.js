@@ -13,6 +13,7 @@ const Navbar = () => {
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-6 text-sm md:text-base">
           <a href="#about" className="hover:text-pink-400 transition duration-200">About</a>
+          <a href="#projects" className="hover:text-pink-400 transition duration-200">Projects</a>
           <a href="#experience" className="hover:text-pink-400 transition duration-200">Work</a>
           <a href="#contact" className="hover:text-pink-400 transition duration-200">Contact</a>
         </div>
@@ -51,6 +52,7 @@ const Navbar = () => {
       {/* Mobile Menu Dropdown */}
       <div className={`md:hidden bg-[#0b0917] text-white transition-all duration-300 ${isOpen ? "block" : "hidden"}`}>
         <a href="#about" onClick={() => setIsOpen(false)} className="block px-6 py-3 border-b border-gray-700 hover:bg-[#1c1a2e]">About</a>
+        <a href="#projects" onClick={() => setIsOpen(false)} className="block px-6 py-3 border-b border-gray-700 hover:bg-[#1c1a2e]">Projects</a>
         <a href="#experience" onClick={() => setIsOpen(false)} className="block px-6 py-3 border-b border-gray-700 hover:bg-[#1c1a2e]">Work</a>
         <a href="#contact" onClick={() => setIsOpen(false)} className="block px-6 py-3 hover:bg-[#1c1a2e]">Contact</a>
       </div>
