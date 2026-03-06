@@ -1,29 +1,48 @@
 import React, { useState } from "react";
 import CoverImg from "../assets/cover-recipe.jpg";
 import UAEHomeImg from "../assets/Uaehome.png";
-import EverUs from "../assets/figma our.jpg"
-import JobPortal from "../assets/JobPortal.png"
+import NetflixCloneImg from "../assets/netflix-clone.png";
+import EverUs from "../assets/figma our.jpg";
+import JobPortal from "../assets/JobPortal.png";
 
 const projectData = [
-{
-  title: "UAE Homes",
-  image: UAEHomeImg,
-  tech: ["Angular", "Ionic"],
-  description:
-    "UAE Homes is a modern web application designed to simplify real estate browsing and property management in the United Arab Emirates.",
-  features: [
-    "Multi-language support (English & Arabic) with RTL layout.",
-    "Browse and filter properties with detailed info.",
-    "Save favorites and list your own properties.",
-    "Light and dark theme support for all devices",
-    "Designed using Figma",
-  ],
-  linkText: "View Code",
-  link: "https://github.com/fahmidakm99/UAE-Homes",
-  liveDemoText: "Live Demo",
-  liveDemoLink: "https://uae-homes.vercel.app" // Add your Vercel URL here
-},
+  {
+    title: "UAE Homes",
+    image: UAEHomeImg,
+    tech: ["Angular", "Ionic"],
+    description:
+      "UAE Homes is a modern web application designed to simplify real estate browsing and property management in the United Arab Emirates.",
+    features: [
+      "Multi-language support (English & Arabic) with RTL layout.",
+      "Browse and filter properties with detailed info.",
+      "Save favorites and list your own properties.",
+      "Light and dark theme support for all devices",
+      "Designed using Figma",
+    ],
+    linkText: "View Code",
+    link: "https://github.com/fahmidakm99/UAE-Homes",
+    liveDemoText: "Live Demo",
+    liveDemoLink: "https://uae-homes.vercel.app", // Add your Vercel URL here
+  },
+  {
+    title: "UAE Homes",
+    image: NetflixCloneImg,
+    tech: ["React", "Javascript", "Css"],
+    description:
+      "Developed a Netflix-inspired movie streaming interface using React and TMDB API to explore trending movies and trailers.",
 
+    features: [
+      "Fetch and display trending movies and TV shows using TMDB API.",
+      "Dynamic banner showing random trending content.",
+      "Watch movie trailers in a centered popup modal using YouTube player.",
+      "Responsive UI similar to Netflix layout.",
+      "Modern React implementation using hooks and Axios for API calls.",
+    ],
+    linkText: "View Code",
+    link: "https://github.com/fahmidakm99/Netflix-Clone-React-tutorial",
+    liveDemoText: "Live Demo",
+    liveDemoLink: "https://netflix-clone-react-tutorial.vercel.app/", // Add your Vercel URL here
+  },
   {
     title: "Recipe App",
     image: CoverImg,
@@ -41,43 +60,42 @@ const projectData = [
     link: "https://github.com/fahmidakm99/RecipeAppDemo",
   },
   {
-  title: "EverUs",
-  image: EverUs,
-  tech: ["React", "Tailwind css", "Node js", "TypeScript"],
-  description:
-    "A responsive customised app to showcase the memories and the moments for valentine",
-  features: [
-    "Relationship AI.",
-    "Picture Gallery with moments.",
-    "customised counter",
-    "Designed using Figma",
-  ],
-  linkText: "View Code",
-  link: "https://github.com/fahmidakm99/couple-website",
-  liveDemoText: "Live Demo",
-  liveDemoLink: "https://couple-website-kaoc.vercel.app" // Add your Vercel URL here
-},
+    title: "EverUs",
+    image: EverUs,
+    tech: ["React", "Tailwind css", "Node js", "TypeScript"],
+    description:
+      "A responsive customised app to showcase the memories and the moments for valentine",
+    features: [
+      "Relationship AI.",
+      "Picture Gallery with moments.",
+      "customised counter",
+      "Designed using Figma",
+    ],
+    linkText: "View Code",
+    link: "https://github.com/fahmidakm99/couple-website",
+    liveDemoText: "Live Demo",
+    liveDemoLink: "https://couple-website-kaoc.vercel.app", // Add your Vercel URL here
+  },
 
-{
-  title: "Job Recruit Portal",
-  image: JobPortal,
-  tech: ["MongoDB", "React", "NodeJs", "Express"],
-  description:
-    "Job Recruit Portal is a small web app developed in Mern stack.",
-  features: [
-    "A Dashboard to track entire application.",
-    "Recruiter can update applicant status.",
-    "Filter applicants by status.",
-    "AI-based or keyword-based matching algorithm.",
-    "Search jobs by title, location, skills.",
-    "Deployed project using Render, Vercel and MongoDB Atlas secure connection.",
-  ],
-  linkText: "View Code",
-  link: "https://github.com/fahmidakm99/Job-Portal-Frontend",
-  liveDemoText: "Live Demo",
-  liveDemoLink: "https://job-portal-frontend-five-gamma.vercel.app/" // Add your Vercel URL here
-},
-
+  {
+    title: "Job Recruit Portal",
+    image: JobPortal,
+    tech: ["MongoDB", "React", "NodeJs", "Express"],
+    description:
+      "Job Recruit Portal is a small web app developed in Mern stack.",
+    features: [
+      "A Dashboard to track entire application.",
+      "Recruiter can update applicant status.",
+      "Filter applicants by status.",
+      "AI-based or keyword-based matching algorithm.",
+      "Search jobs by title, location, skills.",
+      "Deployed project using Render, Vercel and MongoDB Atlas secure connection.",
+    ],
+    linkText: "View Code",
+    link: "https://github.com/fahmidakm99/Job-Portal-Frontend",
+    liveDemoText: "Live Demo",
+    liveDemoLink: "https://job-portal-frontend-five-gamma.vercel.app/", // Add your Vercel URL here
+  },
 ];
 
 const getBadgeColor = (index) => {
