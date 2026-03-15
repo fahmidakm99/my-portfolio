@@ -114,8 +114,22 @@ const getBadgeColor = (index) => {
 const Projects = () => {
   const [expanded, setExpanded] = useState(null);
   const [rotations, setRotations] = useState(
-    projectData.map(() => ({ rotateX: 0, rotateY: 0 })),
+    projectData.map(() => ({ rotateX: 0, rotateY: 0 }))
   );
+
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const projectsPerPage = 3;
+
+  const indexOfLastProject = currentPage * projectsPerPage;
+  const indexOfFirstProject = indexOfLastProject - projectsPerPage;
+
+  const currentProjects = projectData.slice(
+    indexOfFirstProject,
+    indexOfLastProject
+  );
+
+  const totalPages = Math.ceil(projectData.length / projectsPerPage);
 
   const toggleFeatures = (index) => {
     setExpanded(expanded === index ? null : index);
@@ -140,25 +154,26 @@ const Projects = () => {
 
   const handleMouseLeave = (index) => {
     setRotations((prev) =>
-      prev.map((r, i) => (i === index ? { rotateX: 0, rotateY: 0 } : r)),
+      prev.map((r, i) => (i === index ? { rotateX: 0, rotateY: 0 } : r))
     );
   };
 
   return (
     <section
-      className="min-h-screen px-4 pt-24 text-white max-w-6xl sm:px-6 lg:px-8  mx-auto w-full"
+      className="min-h-screen px-4 pt-24 text-white max-w-6xl sm:px-6 lg:px-8 mx-auto w-full"
       id="projects"
     >
-      <p className="text-pink-400 text-sm uppercase tracking-widest space-y-3 mb-4">
+      <p className="text-pink-400 text-sm uppercase tracking-widest mb-4">
         Project Explorations
       </p>
-      <h2 className="text-4xl space-y-3 mb-10 font-extrabold">Projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {projectData.map((project, i) => (
+
+      <h2 className="text-4xl mb-10 font-extrabold">Projects</h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {currentProjects.map((project, i) => (
           <div
             key={i}
-            className="bg-[#1d1836] rounded-xl shadow-lg overflow-hidden flex flex-col transition hover:shadow-xl 
-      backdrop-blur-md border border-white/10 cursor-pointer w-full mx-auto"
+            className="bg-[#1d1836] rounded-xl shadow-lg overflow-hidden flex flex-col transition hover:shadow-xl backdrop-blur-md border border-white/10 cursor-pointer w-full mx-auto"
             style={{
               transform: `perspective(1000px) rotateX(${rotations[i].rotateX}deg) rotateY(${rotations[i].rotateY}deg)`,
               transformStyle: "preserve-3d",
@@ -177,7 +192,7 @@ const Projects = () => {
 
             <div className="px-4 sm:px-5 pb-5 pt-1 flex flex-col justify-between flex-grow">
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
+                <h3 className="text-xl sm:text-2xl font-bold mb-2">
                   {project.title}
                 </h3>
                 <p className="text-gray-300 text-sm mb-4">
@@ -208,22 +223,25 @@ const Projects = () => {
                 >
                   {project.linkText}
                 </a>
-                <a
-                  href={project.liveDemoLink}
-                  className="text-sm text-gray-300 font-medium hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {project.liveDemoText}
-                </a>
+
+                {project.liveDemoLink && (
+                  <a
+                    href={project.liveDemoLink}
+                    className="text-sm text-gray-300 font-medium hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {project.liveDemoText}
+                  </a>
+                )}
               </div>
 
               <div className="flex flex-wrap gap-2 mt-3">
                 {project.tech.map((tech, idx) => (
                   <span
                     key={idx}
-                    className={`text-sm font-medium py-1 rounded select-none border border-transparent ${getBadgeColor(
-                      idx,
+                    className={`text-sm font-medium py-1 rounded ${getBadgeColor(
+                      idx
                     )}`}
                   >
                     #{tech}
@@ -233,6 +251,31 @@ const Projects = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Pagination */}
+      <div className="flex justify-center items-center gap-6 mt-12">
+        <button
+          onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+          disabled={currentPage === 1}
+          className="px-4 py-2 bg-[#1d1836] border border-white/10 rounded hover:bg-[#2a244a] disabled:opacity-40"
+        >
+          Prev
+        </button>
+
+        <span className="text-gray-300">
+          Page {currentPage} of {totalPages}
+        </span>
+
+        <button
+          onClick={() =>
+            setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+          }
+          disabled={currentPage === totalPages}
+          className="px-4 py-2 bg-[#1d1836] border border-white/10 rounded hover:bg-[#2a244a] disabled:opacity-40"
+        >
+          Next
+        </button>
       </div>
     </section>
   );
