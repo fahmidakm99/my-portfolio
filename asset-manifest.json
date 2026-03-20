@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.9d4ad8fc.css",
-    "main.js": "/my-portfolio/static/js/main.142b7b37.js",
+    "main.js": "/my-portfolio/static/js/main.a2282b55.js",
     "static/js/453.438d9e50.chunk.js": "/my-portfolio/static/js/453.438d9e50.chunk.js",
     "static/media/vdo.mp4": "/my-portfolio/static/media/vdo.2ca4354bcffe94ba634a.mp4",
     "static/media/figma our.jpg": "/my-portfolio/static/media/figma our.abb8e3614640a813d1a2.jpg",
@@ -11,15 +11,16 @@
     "static/media/profile.jpg": "/my-portfolio/static/media/profile.6fbe41c50457c99d839b.jpg",
     "static/media/bg5.jpg": "/my-portfolio/static/media/bg5.fdf2b7bf29f803ca1fdb.jpg",
     "static/media/JobPortal.png": "/my-portfolio/static/media/JobPortal.ffc469827a20495e3cf4.png",
+    "static/media/images.png": "/my-portfolio/static/media/images.2eb69133ff0d9fcdf004.png",
     "static/media/ebay.png": "/my-portfolio/static/media/ebay.83aa9e44dd87de577604.png",
     "static/media/aker.png": "/my-portfolio/static/media/aker.faed72e2c4fbe9983115.png",
     "index.html": "/my-portfolio/index.html",
     "main.9d4ad8fc.css.map": "/my-portfolio/static/css/main.9d4ad8fc.css.map",
-    "main.142b7b37.js.map": "/my-portfolio/static/js/main.142b7b37.js.map",
+    "main.a2282b55.js.map": "/my-portfolio/static/js/main.a2282b55.js.map",
     "453.438d9e50.chunk.js.map": "/my-portfolio/static/js/453.438d9e50.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9d4ad8fc.css",
-    "static/js/main.142b7b37.js"
+    "static/js/main.a2282b55.js"
   ]
 }
