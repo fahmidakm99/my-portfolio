@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import Aker from "./aker.png";
 import Ebay from "./ebay.png";
-import CodeFolks from "./images.jpg";
+import CodeFolks from "./images.png";
 
 const experiences = [
    {
